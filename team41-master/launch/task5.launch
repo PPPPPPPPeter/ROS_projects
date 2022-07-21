@@ -1,0 +1,16 @@
+<launch>
+    <!-- rviz -->
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch" />
+
+    <arg name="target_colour" default="blue" />
+
+
+    <node pkg="team41" type="task5_copy.py" name ="task5" output = "screen">
+    </node>
+    <!-- <node pkg="team41" type="task5_client.py" name ="task5_client" output = "screen">
+    </node> -->
+    <node pkg="team41" type="task5_beacon.py" name ="task5_beacon" output = "screen" args="-target_colour $(arg target_colour)">
+        <param name="colour" value="$(arg target_colour)" />
+    </node>
+
+</launch>

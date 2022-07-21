@@ -1,0 +1,10 @@
+<launch>
+   
+    <!-- <node pkg="team41" type="task2_server.py" name ="task2_server" output = "screen">
+    </node>
+     <node pkg="team41" type="task2_client.py" name ="task2_client" output = "screen">
+    </node> -->
+    <node pkg="team41" type="task2V3.py" name ="task2" output = "screen">
+    </node>
+
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="team41" type="task1.py" name ="task1" output = "screen">
+    </node>
+    <node pkg="team41" type="task1_subscriber.py" name ="task1_subscriber" output = "screen">
+    </node>
+
+</launch>
